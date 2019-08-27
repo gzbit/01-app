@@ -4,16 +4,20 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import Movie from "../components/movie"
+
+const movie = {
+  title: "Superbad",
+  genre: "Comedy",
+  trailer: "MNpoTxeydiY",
+  image: "https://m.media-amazon.com/images/I/71onlDHdUML._AC_UY218_.jpg"
+}
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+   
+      <Movie data={movie} />
+  
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
 )
